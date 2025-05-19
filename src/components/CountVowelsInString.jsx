@@ -1,7 +1,7 @@
 import CSS from "./CountVowelsInString.module.css";
 
 const CountVowelsInString = () => {
-  function countLetters(originalString) {
+  function countVowelsAndConsonants(originalString) {
     originalString = originalString.toLowerCase()
 
     const vowels = ["a", "e", "i", "o", "u"]
@@ -21,7 +21,7 @@ const CountVowelsInString = () => {
 
   const displayCount = () => {
     const inputText = document.querySelector(`.${CSS.input}`).value
-    const { vowelCount, consonantCount} = countLetters(inputText) // return an object {}
+    const { vowelCount, consonantCount} = countVowelsAndConsonants(inputText) // return an object {}
 
     document.querySelector(`.${CSS.resultVowels}`).textContent = `Vowels: ${vowelCount}`
     document.querySelector(`.${CSS.resultConsonants}`).textContent = `Consonants: ${consonantCount}`
