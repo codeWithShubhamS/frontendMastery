@@ -1,17 +1,17 @@
-import CSS from "./CountVowelsInString.module.css";
+import SCSS from "./CountVowelsInString.module.scss";
 
 const CountVowelsInString = () => {
-  function countLetters(originalString) {
-    originalString = originalString.toLowerCase()
+  function countLetters(inputParameter) {
+    inputParameter = inputParameter.toLowerCase()
 
     const vowels = ["a", "e", "i", "o", "u"]
 
     let vowelCount = 0
     let consonantCount = 0;
 
-    for(let i = 0; i < originalString.length; i++) {
-      if(/[a-z]/.test(originalString[i])) {
-        vowels.includes(originalString[i]) ? vowelCount++ : consonantCount++
+    for(let i = 0; i < inputParameter.length; i++) {
+      if(/[a-z]/.test(inputParameter[i])) {
+        vowels.includes(inputParameter[i]) ? vowelCount++ : consonantCount++
       }
     }
 
@@ -20,22 +20,22 @@ const CountVowelsInString = () => {
   }
 
   const displayCount = () => {
-    const inputText = document.querySelector(`.${CSS.input}`).value
+    const inputText = document.querySelector(`.${SCSS.input}`).value
     const { vowelCount, consonantCount} = countLetters(inputText)
 
-    document.querySelector(`.${CSS.resultVowels}`).textContent = `Vowels: ${vowelCount}`
-    document.querySelector(`.${CSS.resultConsonants}`).textContent = `Consonants: ${consonantCount}`
+    document.querySelector(`.${SCSS.resultVowels}`).textContent = `Vowels: ${vowelCount}`
+    document.querySelector(`.${SCSS.resultConsonants}`).textContent = `Consonants: ${consonantCount}`
   }
 
 
   return (
     <>
-      <h1 className={CSS.title}>Count Vowels In a String</h1>
-      <input type="text" placeholder="Enter a string" className={CSS.input} />
-      <button className={CSS.button} onClick={displayCount}>Count Vowels</button>
-      <div className={CSS.resultContainer}>
-        <p className={CSS.resultVowels}>Vowels: 0</p>
-        <p className={CSS.resultConsonants}>Consonants: 0</p>
+      <h1 className={SCSS.title}>Count Vowels In a String</h1>
+      <input type="text" placeholder="Enter a string" className={SCSS.input} />
+      <button className={SCSS.button} onClick={displayCount}>Count Vowels</button>
+      <div className={SCSS.resultContainer}>
+        <p className={SCSS.resultVowels}>Vowels: 0</p>
+        <p className={SCSS.resultConsonants}>Consonants: 0</p>
       </div>
     </>
   )
