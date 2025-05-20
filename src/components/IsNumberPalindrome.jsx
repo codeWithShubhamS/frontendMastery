@@ -8,6 +8,10 @@ const IsNumberPalindrome = () => {
       return `The given input (${inputParamter}) is not a number, please enter a number.`
     }
 
+    if(inputParamter < 0) {
+      return `The given input (${inputParamter}) is not a positive number, please enter a positive number.`
+    }
+
     let originalNum = inputParamter
     let reversedNum = 0
 
