@@ -10,7 +10,7 @@ const FirstNonRepeatingCharacter = () => {
 
     let charCount = {};
     for (let i = 0; i < inputParameter.length; i++) {
-      if (charCount[inputParameter[i]] >= 1) {
+      if (charCount[inputParameter[i]]) {
         charCount[inputParameter[i]]++;
       } else {
         charCount[inputParameter[i]] = 1;
