@@ -1,12 +1,14 @@
 import SCSS from "./App.module.scss";
-import CountVowelsInString from "./components/CountVowelsInString";
-import IsNumberPalindrome from "./components/IsNumberPalindrome";
+// import CountVowelsInString from "./components/CountVowelsInString";
+// import IsNumberPalindrome from "./components/IsNumberPalindrome";
+import RemoveDuplicatesOfArray from "./components/RemoveDuplicatesOfArray";
 
 const App = () => {
   return (
     <div className={SCSS.container}>
-      <IsNumberPalindrome />
+      {/* <IsNumberPalindrome /> */}
       {/* <CountVowelsInString /> */}
+      <RemoveDuplicatesOfArray />
     </div>
   );
 };

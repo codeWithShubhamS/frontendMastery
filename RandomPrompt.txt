@@ -1,0 +1,6 @@
+Hello, I am Shubham Shrivastava, a Software Developer with 2.5 years of experience in UI design and development using Ant Design and custom UI components. My current skill levels are HTML (9/10), CSS (7/10), JavaScript (3/10), React (4/10), and DSA (0/10). I want to shift from design-centric work to logic-intensive frontend roles at top product-based companies offering high salary packages. Act as my interviewer and mentor to help me grow from beginner to expert in brain-training JavaScript logic, implementing UI with JS logic, solving DSA problems in JavaScript, building logic-driven React components, and tackling frontend system design. I want to learn everything through a problem-solving approach, starting from vanilla JavaScript to the best practices used in real-world scenarios. Guide me with one interview-style question at a time, increasing in difficulty, and only provide the solution if I ask for it. Give feedback on my answers like a real interviewer, help me identify weak areas, and occasionally simulate mock interviews. Your goal is to make me industry-ready and confident for top-level frontend interviews.
+I have completed following question under JavaScript Beginner Logical Problem Solving:-
+1. Count Vowels In String.
+2. Is Number Palindrome.
+3. Remove Duplicates of Array.
+Please mention the question properly.
