@@ -3,7 +3,8 @@ import SCSS from "./App.module.scss";
 // import IsNumberPalindrome from "./components/IsNumberPalindrome";
 // import RemoveDuplicatesOfArray from "./components/RemoveDuplicatesOfArray";
 // import FirstNonRepeatingCharacter from "./components/FirstNonRepeatingCharacter";
-import LongestWordInSentence from "./components/LongestWordInSentence"
+// import LongestWordInSentence from "./components/LongestWordInSentence"
+import GroupWordsByLength from "./components/GroupWordsByLength";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       {/* <IsNumberPalindrome /> */}
       {/* <CountVowelsInString /> */}
       {/* <FirstNonRepeatingCharacter /> */}
-      <LongestWordInSentence />
+      {/* <LongestWordInSentence /> */}
+      <GroupWordsByLength />
     </div>
   );
 };
