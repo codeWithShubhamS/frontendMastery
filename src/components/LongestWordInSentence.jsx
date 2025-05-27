@@ -21,18 +21,18 @@ const LongestWordInSentence = () => {
       words.push(currentWord)
     }
 
-    let wordsAndCount = {}
+    // let wordsAndCount = {}
 
-    for(let i = 0; i < words.length; i++) {
-      wordsAndCount[words[i]] = words[i].length
-      console.log(wordsAndCount)
-    }
+    // for(let i = 0; i < words.length; i++) {
+    //   wordsAndCount[words[i]] = words[i].length
+    //   console.log(wordsAndCount)
+    // }
 
     let biggestWord = ""
-    let wordss = Object.keys(wordsAndCount)
-    for(let i = 0; i < wordss.length; i++) {
-      if(wordss[i].length > biggestWord.length){
-        biggestWord = wordss[i]
+    // let wordss = Object.keys(wordsAndCount)
+    for(let i = 0; i < words.length; i++) {
+      if(words[i].length > biggestWord.length){
+        biggestWord = words[i]
       }
     }
 
