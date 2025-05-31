@@ -36,17 +36,17 @@ const GroupWordsByLength = () => {
 
   function handleGroupWords() {
     let inputTextValue = document.querySelector(`.${SCSS.input}`).value.trim()
-    let longestWord = getObjectCountWithWords(inputTextValue)
-    document.querySelector(`.${SCSS.resultWord}`).textContent = `Longest Word in a Sentence: ${longestWord}`
+    let groupedWords = JSON.stringify(getObjectCountWithWords(inputTextValue))
+    document.querySelector(`.${SCSS.resultWord}`).textContent = `Group words by length: ${groupedWords}`
   }
 
   return (
     <>
-      <h1 className={SCSS.title}>Longest word in a Sentence</h1>
+      <h1 className={SCSS.title}>Group words by length in a Sentence</h1>
       <input type="text" placeholder="Enter a string" className={SCSS.input} />
       <button className={SCSS.button} onClick={handleGroupWords}>Longest Word</button>
       <div className={SCSS.resultContainer}>
-        <p className={SCSS.resultWord}>Longest Word:</p>
+        <p className={SCSS.resultWord}>Group words by length:</p>
       </div>
     </>
   );
